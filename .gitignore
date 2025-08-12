@@ -1,0 +1,17 @@
+# Node.js
+/node_modules/
+**/node_modules/
+
+# Marp Output
+*.pdf
+*.html
+*.pptx
+
+# OS・Editor Specific
+.DS_Store
+Thumbs.db
+.idea/
+
+# Others
+.env
+chrome/

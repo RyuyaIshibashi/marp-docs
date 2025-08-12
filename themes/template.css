@@ -1,0 +1,172 @@
+/* @theme template */
+
+@import 'default';
+
+section {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding: 40px;
+  background: #fff;
+  font-size: 1.1em;
+}
+
+/* 表紙（1ページ目）のみ青いサイドバー */
+section[data-marpit-pagination="1"] {
+  background: linear-gradient(90deg, #4a90e2 0 80px, #fff 80px 100%);
+}
+
+/* Logo image removed - add your own logo by uncommenting and updating the path below
+section {
+  background-image: url('../images/your-logo.png');
+  background-repeat: no-repeat;
+  background-position: right 40px bottom 24px;
+  background-size: 120px;
+}
+*/
+
+section[data-marpit-pagination="1"] {
+  --color-background: #ffffff;
+  background: linear-gradient(90deg, #4a90e2 0 80px, #fff 80px 100%);
+  padding: 0;
+}
+
+section[data-marpit-pagination="1"]::after {
+  display: none !important;
+}
+
+section::after {
+  font-size: 14px;
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  color: #666;
+}
+
+.sidebar {
+  width: 120px;
+  background: #4a90e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-content {
+  margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.company-logo {
+  width: 100px;
+  margin: 32px 0 16px 0;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+}
+
+.title {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.date {
+  color: #222;
+  font-size: 1em;
+  margin-top: 1.5em;
+}
+
+.author {
+  color: #222;
+  font-size: 1em;
+  margin-top: 0.2em;
+}
+
+.company-footer {
+  position: absolute;
+  right: 40px;
+  bottom: 24px;
+  width: 80px;
+  opacity: 0.7;
+}
+
+.slide-title {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #222;
+  text-align: left;
+  margin-bottom: 0.1em;
+  margin-top: 0.2em;
+  border-bottom: 4px solid #4a90e2;
+  display: inline-block;
+  padding-bottom: 0.1em;
+}
+
+.highlight-box {
+  background: #e8f2ff;
+  border-left: 6px solid #4a90e2;
+  padding: 0.8em 1em;
+  margin: 1em 0;
+  font-weight: bold;
+  color: #2c5aa0;
+  border-radius: 6px;
+}
+
+.twocolumns {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.col-left {
+  float: left;
+  width: 47.5%;
+  text-align: left;
+}
+
+.col-right {
+  float: right;
+  width: 47.5%;
+  text-align: left;
+}
+
+div.mermaid { 
+  all: unset; 
+}
+
+.cover-title {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.cover-subtitle {
+  color: #666;
+  font-size: 1.2em;
+  margin-bottom: 0.2em;
+}
+
+.cover-date, .cover-author {
+  color: #222;
+  font-size: 1em;
+  margin-top: 0.2em;
+}
+
+.cover-main-content {
+  margin-left: 140px;
+  display: block;
+  font-size: 1.2em;
+  margin-top: 18vh;
+}
