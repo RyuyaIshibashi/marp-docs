@@ -7,6 +7,9 @@
 *.html
 *.pptx
 
+# Exception - Keep this specific PDF
+!slide_template.pdf
+
 # OS・Editor Specific
 .DS_Store
 Thumbs.db

@@ -1,5 +1,8 @@
 {
   "markdown.marp.themes": [
     "themes/template.css",
+    "my-presentation/themes/my-presentation.css",
+    "hogehoge/themes/hogehoge.css",
+    "hogehogehoge/themes/hogehogehoge.css"
   ]
 }

@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Marp presentation documents",
   "scripts": {
-    "build": "marp slide_template.md --pdf --theme-set ./themes",
-    "build-html": "marp slide_template.md --theme-set ./themes",
-    "watch": "marp slide_template.md --watch --theme-set ./themes",
-    "new": "tsx scripts/setup-project.ts",
-    "update-vscode-settings": "node scripts/update-vscode-settings.js"
+    "build": "marp slide_template.md --pdf",
+    "build-html": "marp slide_template.md",
+    "watch": "marp slide_template.md --watch",
+    "new": "tsx scripts/setup-project.ts"
   },
   "dependencies": {
     "@textlint-ja/textlint-rule-preset-ai-writing": "^1.6.0"

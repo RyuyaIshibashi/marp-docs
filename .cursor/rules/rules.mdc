@@ -40,6 +40,12 @@ alwaysApply: true
    ```markdown
    # タイトルスライド
    
+   <!-- Mermaidの初期化 -->
+   <script type="module">
+   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
+   mermaid.initialize({ startOnLoad: true });
+   </script>
+   
    ---
    
    ## アジェンダ
@@ -52,6 +58,12 @@ alwaysApply: true
    
    # まとめ
    ```
+
+4. **Mermaidチャート対応**
+   - **重要:** 表紙スライドにMermaid初期化スクリプトを必ず配置
+   - 初期化スクリプトは表紙の直後に配置し、プレゼンテーション全体でMermaidを利用可能にする
+   - 各スライドでの重複した初期化スクリプトは不要
+   - フローチャート、ガントチャート、シーケンス図などすべてのMermaidチャートが利用可能
 
 ### CSS テーマ作成時
 
@@ -188,6 +200,13 @@ alwaysApply: true
    - Node.js/NPMのバージョン確認
    - 依存関係の再インストール提案
    - エラーログの解析
+
+6. **Mermaidチャートが表示されない**
+   - 表紙スライドに初期化スクリプトが配置されているか確認
+   - 初期化スクリプトの構文が正しいか確認
+   - ブラウザの開発者ツールでエラーがないか確認
+   - Marp for VS Code拡張機能の再読み込み
+   - プレビューの再読み込み（Ctrl+Shift+P → "Marp: Reload Preview"）
 
 ## 📝 コミュニケーション方針
 

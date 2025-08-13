@@ -15,6 +15,12 @@ themeSet: './themes'
   <div class="cover-author">発表者名</div>
 </div>
 
+<!-- Mermaidの初期化 -->
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true });
+</script>
+
 ---
 
 <!-- 2カラムレイアウト -->
@@ -72,11 +78,6 @@ flowchart TD
     D --> E[結果]
     E --> F[終了]
 </pre>
-
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true });
-</script>
 
 ---
 
@@ -227,6 +228,32 @@ const fetchData = async (url) => {
 </div>
 
 <div style="clear: both;"></div>
+
+---
+
+<!-- ポイント項目 -->
+# <span class="slide-title">ポイント項目のパターン</span>
+
+### 番号付きポイント項目
+<div class="point-item">
+<span class="point-number">1</span> <strong>最初のポイント</strong><br>
+ここに詳細な説明を記載します。
+</div>
+
+<div class="point-item">
+<span class="point-number">2</span> <strong>2番目のポイント</strong><br>
+重要な内容を簡潔に説明します。
+</div>
+
+<div class="point-item">
+<span class="point-number">3</span> <strong>3番目のポイント</strong><br>
+番号付きで順序立てて説明する場合に便利です。
+</div>
+
+### 通常のテキストと組み合わせて
+<div class="highlight-box">
+ポイント項目は重要な内容を順序立てて説明する際に効果的です
+</div>
 
 ---
 
