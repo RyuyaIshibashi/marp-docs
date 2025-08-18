@@ -222,7 +222,7 @@ npm run new -- my-presentation
 
 - 📖 [Marp公式ドキュメント（英語）](https://marp.app/)
 - 🎯 [前半：非エンジニアでもできる！Marp&Cursorで始める、爆速🚀！AIプレゼン資料作成術🗒️（サンプルテンプレート付き）](https://tech.enechange.co.jp/entry/2025/08/15/100000)
-- 🎯 [後半：非エンジニアでもできる！Marp&Cursorで始める、爆速🚀！AIプレゼン資料作成術🗒️（サンプルテンプレート付き）](https://tech.enechange.co.jp/draft/entry/05N-sk97diKUzrNinP2BoswKKnw)
+- 🎯 [後半：非エンジニアでもできる！Marp&Cursorで始める、爆速🚀！AIプレゼン資料作成術🗒️（サンプルテンプレート付き）](https://tech.enechange.co.jp/entry/2025/08/18/100000)
 
 ---
 
